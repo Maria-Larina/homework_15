@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Таблица</title>
+	<style>
+   table { 
+    width: 100%; 
+    border: 2px solid black; 
+    border-collapse: collapse; 
+   }
+   caption {
+   	font-size: 35px;
+   	font-weight: bold;
+   }
+   th { 
+   
+    background: darkcyan; 
+    border: 1px solid black; 
+    text-align: center;
+   }
+   td { 
+    background: pink;
+    border: 1px solid black; 
+    text-align: center;
+   }
+  </style>
+</head>
+<body>
+	<table>
+	  <caption>Очень большая таблица</caption>
+	   <thead>
+		<tr>
+			<th>ячейка</th>
+			<th>ячейка</th>
+			<th>ячейка</th>
+			<th>ячейка</th>
+			<th>ячейка</th>
+			<th>ячейка</th>
+			<th>ячейка</th>
+			<th>ячейка</th>
+			<th>ячейка</th>
+			<th>ячейка</th>
+		</tr>
+	   </thead>
+	   
+	   <tfoot>
+		<tr>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+		</tr>
+	   </tfoot>
+	  
+	   <tbody>
+
+        <tr>
+			<td colspan="3" rowspan="4">ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			
+			
+		</tr>
+
+        <tr>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			
+		</tr>
+
+        <tr>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			
+		</tr>
+
+        <tr>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td colspan="2">ячейка</td>
+			<td>ячейка</td>
+			
+		</tr>
+
+        <tr>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td rowspan="2">ячейка</td>
+			<td>ячейка</td>
+		</tr>
+
+        <tr>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			
+		</tr>
+
+        <tr>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+		</tr>
+
+        <tr>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+			<td>ячейка</td>
+		</tr>
+    </tbody>
+
+    </table>
+
+    <p>
+    	<form action="/search.php" method="post" enctype="multipart/form-data">
+	<p>
+		<label for="login-field">Ваш логин:</label>
+		<input type="text" name="login" id="login-field">
+	</p>
+	<p>
+		<label for="password-field">Ваш пароль:</label>
+		<input type="password" name="password" id="password-field">
+	</p>
+	<p>Добавьте свою  фотографию
+		<input type="file" name="avatar">
+	</p>
+
+	 <p>На каком вы курсе?
+    	<select name="opinion">
+    		<option value="1">1 курс</option>
+    		<option value="2">2 курс</option>
+    		<option value="3">3 курс</option>
+    		<option value="4">4 курс</option>
+    	</select>
+
+    </p>
+    <p> Какой факультет лучший в РЭУ?
+    	<br>
+      <label>
+    	<input type="radio" name="question" value=1>ФМЭСИ
+      </label>
+      <br>
+      <label>
+      	<input type="radio" name="question" value="2">Факультет математики, экономики, статистики и информатики
+      </label>
+      <br>
+      <label>
+      	<input type="radio" name="question" value="3">Не знаю (я гей)
+      </label>
+    </p>
+   
+	<p>
+		<input type="checkbox" name="subscribe" id="subscribe-field" checked>
+		<label for="subscribe-field">Получать самые свежие новости</label>
+    </p>
+    <p>
+        <textarea name="comment" id="comment-field" rows="5">Ваш комментарий</textarea>
+    </p>
+    <p>
+        <input type="submit" value="Отправить">
+    </p>
+	</form>
+</p>
+</body>
+</html>
